@@ -38,3 +38,40 @@ main {
     min-height: 800px;
 }
 
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+.details ul li.wifi {
+    background: url('wifi-solid.svg') no-repeat center left;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+.details ul li.cloud {
+    background: url('cloud-arrow-up-solid.svg') no-repeat center left;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+.details ul li.qr {
+    background: url('qrcode-solid.svg') no-repeat center left;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+.details ul li.photo {
+    background: url('photo-film-solid.svg') no-repeat center left;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
