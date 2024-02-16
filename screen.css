@@ -8,6 +8,10 @@
     --main-bg-color:#E9E9E9;
     --primary-text-color: #424242;
     --accent-color:#FF3F3C;
+    --secondary-text-color:#FFFFFF;
+    --h3-font-size:64px;
+    --cta-font-size:24px;
+    --text-align: center;
 }
 body {
     background: var(--main-bg-color);
@@ -24,7 +28,8 @@ header {
 
 header h1 {
     margin: 0;
-    font-weight: normal;
+    font-weight: bold;
+    
 }
 
 main {
@@ -34,7 +39,7 @@ main {
 }
 
 .hero {
-    text-align: center;
+    text-align: var(--text-align);
     min-height: 800px;
 }
 
@@ -45,33 +50,67 @@ main {
     margin:0;
 }
 
+h3 {
+    text-align: var(--text-align);
+    font-size: var(--h3-font-size);
+
+}
+
+
 .details ul li {
+    
     list-style-type: none;
     margin: 10px 0;
     padding: 0 0 0 35px;
+
 }
 
 .details ul li.wifi {
     background: url('wifi-solid.svg') no-repeat center left;
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0 0 0 35px;
+  
 }
 .details ul li.cloud {
     background: url('cloud-arrow-up-solid.svg') no-repeat center left;
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0 0 0 35px;
+    
 }
 .details ul li.qr {
     background: url('qrcode-solid.svg') no-repeat center left;
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0 0 0 35px;
+
 }
 .details ul li.photo {
     background: url('photo-film-solid.svg') no-repeat center left;
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0 0 0 35px;
+    
 }
+
+.cta div {
+    border-radius: 40px;
+    background: linear-gradient(180deg, #E2E2E2 0%, rgba(217, 217, 217, 0.00) 100%);
+    width: 1014px;
+    height: 188px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cta input.textbox {
+    
+    font-size: var(--cta-font-size);
+    width: 642px;
+    height: 96px;
+    border: 0px;
+    padding-left: 10px;
+
+}
+
+.cta input.button {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    font-size: var(--cta-font-size);
+    width: 254px;
+    height: 96px;
+    border: 0px;
+    
+}
+
