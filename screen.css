@@ -1,7 +1,3 @@
-/* Add screen styles below */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap') */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
 :root {
@@ -11,13 +7,18 @@
     --secondary-text-color:#FFFFFF;
     --h3-font-size:64px;
     --cta-font-size:24px;
+    --cta-height:96px;
+    --cta-border:0px;
     --text-align: center;
+    --details-font-size:32px;
+    --margin-zero-auto:0 auto;
+    
 }
 body {
     background: var(--main-bg-color);
     color: var(--primary-text-color);
     font-family: "Inter", sans-serif;
-    margin: 0;
+    margin: var(--margin-zero-auto);
     padding: 0;
 }
 
@@ -28,14 +29,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-weight: bold;
-    
+    font-size: 36;
 }
 
 main {
     background: url('polaroid.png') no-repeat center 100px;
-    margin: 0 auto;
-    width: 1000px;
+    margin: var(--margin-zero-auto);
+    width: 1100px;
 }
 
 .hero {
@@ -47,39 +47,39 @@ main {
     font-size: 9em;
     line-height: 1em;
     text-transform: uppercase;
-    margin:0;
+    margin:var(--margin-zero-auto);
 }
 
 h3 {
     text-align: var(--text-align);
     font-size: var(--h3-font-size);
-
 }
 
+.details p {
+    font-size: var(--details-font-size)
+}
 
 .details ul li {
-    
     list-style-type: none;
     margin: 10px 0;
-    padding: 0 0 0 35px;
-
+    padding: 0 0 0 70px;
+    font-size: var(--details-font-size)
 }
 
 .details ul li.wifi {
     background: url('wifi-solid.svg') no-repeat center left;
-  
 }
+
 .details ul li.cloud {
     background: url('cloud-arrow-up-solid.svg') no-repeat center left;
-    
 }
+
 .details ul li.qr {
     background: url('qrcode-solid.svg') no-repeat center left;
-
 }
+
 .details ul li.photo {
-    background: url('photo-film-solid.svg') no-repeat center left;
-    
+    background: url('photo-film-solid.svg') no-repeat center left; 
 }
 
 .cta div {
@@ -87,21 +87,18 @@ h3 {
     background: linear-gradient(180deg, #E2E2E2 0%, rgba(217, 217, 217, 0.00) 100%);
     width: 1014px;
     height: 188px;
-    margin: 0 auto;
+    margin: var(--margin-zero-auto);
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .cta input.textbox {
-    
     font-size: var(--cta-font-size);
     width: 642px;
-    height: 96px;
-    border: 0px;
+    height: var(--cta-height);
+    border: var(--cta-border);
     padding-left: 10px;
-
 }
 
 .cta input.button {
@@ -109,8 +106,7 @@ h3 {
     color: var(--secondary-text-color);
     font-size: var(--cta-font-size);
     width: 254px;
-    height: 96px;
-    border: 0px;
-    
+    height: var(--cta-height);
+    border: var(--cta-border);
 }
 
